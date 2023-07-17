@@ -1,0 +1,46 @@
+.btn {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, .1);
+}
+
+.btn svg {
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.orange {
+  background: #E5812A;
+}
+
+.blue {
+  background: #2B84C6;
+}
+
+.limeGreen {
+  background: #A3CC41;
+}
+
+.red {
+  background: #EB1E24;
+}
+
+.green {
+  background: #037232;
+}
+
+.navy {
+  background: #0A2A3D;
+}
