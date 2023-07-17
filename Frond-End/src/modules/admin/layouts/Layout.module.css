@@ -1,0 +1,17 @@
+.container {
+  background: #e0e0e0;
+  overflow-x: hidden;
+  display: flex;
+  transition: background .3s;
+}
+
+.content {
+  width: calc(100vw - 40px);
+  min-height: calc(100vh - 60px);
+  padding: 50px 20px;
+}
+
+/* Dark Mode Styles */
+.container.dark {
+  background: #001324;
+}

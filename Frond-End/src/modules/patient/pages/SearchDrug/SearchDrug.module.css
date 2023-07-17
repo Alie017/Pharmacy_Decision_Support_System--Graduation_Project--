@@ -1,0 +1,100 @@
+.interaction select {
+  padding: 10px;
+}
+
+.interaction option:nth-child(odd) {
+  background: #cbcbcb;
+}
+
+.drugs {
+  margin-top: 20px;
+}
+
+.drugs .drug {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 600px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #0c7ed0;
+  color: #fff;
+}
+
+.drug svg {
+  cursor: pointer;
+  color: #c50000;
+}
+
+.interaction button {
+  display: block;
+  margin: 20px 0;
+  outline: none;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  background: #0066AF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.result {
+  margin-bottom: 15px;
+}
+
+.result h6 {
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+
+.result p {
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+
+.result span {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.drugInteraction {
+  font-weight: 400;
+  color: #c50000;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+
+/* Dark Mode Styles */
+h5.dark {
+  color: #fff;
+}
+
+.result.dark {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+  .interaction :is(select, button, .drug) {
+    width: 100%;
+  }
+
+  .interaction :is(option, .drug) {
+    font-size: 14px;
+  }
+
+  .result {
+    margin-bottom: 25px;
+  }
+
+  .result h6 {
+    font-size: 18px;
+  }
+
+  .result p {
+    font-size: 14px;
+  }
+}

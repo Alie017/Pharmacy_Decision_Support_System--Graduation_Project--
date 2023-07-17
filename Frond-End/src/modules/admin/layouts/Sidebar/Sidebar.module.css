@@ -1,0 +1,72 @@
+.sidebar {
+  background: #cfcfcf;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  top: 60px;
+  width: 50px;
+  transition: all .3s;
+  z-index: 1;
+}
+
+.sidebar *:is(h1, p) {
+  transition: all .3s;
+}
+
+.title h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.title span {
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  border-radius: 3px;
+  background: #FBC112;
+  margin-bottom: 20px;
+}
+
+.title p {
+  margin-bottom: 40px;
+}
+
+.sidebar ul {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #777777;
+  transition: all .3s;
+}
+
+/* Dark Mode Styles */
+.sidebar.dark {
+  background: #272727;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.sidebar.dark a {
+  color: #fff;
+}
+
+.sidebar.dark *:is(h1, p) {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 40px;
+  }
+}
